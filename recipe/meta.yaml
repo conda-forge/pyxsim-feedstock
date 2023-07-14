@@ -1,5 +1,5 @@
 {% set name = "pyxsim" %}
-{% set version = "4.2.1" %}
+{% set version = "4.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyxsim-{{ version }}.tar.gz
-  sha256: f708f5918b53068320efa21982ee4e590d0594ff9cff0ac14fef61eb7eae5517
+  sha256: 616307fb3447c4450c68949f142eb99b46307be81276399e4363227c1e720d8a
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
