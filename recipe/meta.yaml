@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyxsim-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyxsim-{{ version }}.tar.gz
   sha256: c65f301664f1025f4de599eadc388604dcf9c92d63c3e5c384ce0bc62e5d3eff
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
