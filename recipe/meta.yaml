@@ -10,6 +10,7 @@ source:
   sha256: c51c911655ae8bd21ad6af36f6e3670ee2f82fe1a429dcf24b8033bedff09713
 
 build:
+  skip: true  # [py<311]
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
@@ -21,7 +22,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
   host:
-    - python
+    - python >=3.11
     - numpy
     - pip
     - cython >=0.29.21
@@ -30,7 +31,7 @@ requirements:
     - toml
     - wheel >=0.36.2
   run:
-    - python
+    - python >=3.11
     - astropy >=4.0
     - yt >=4.1.3
     - h5py >=3.0
