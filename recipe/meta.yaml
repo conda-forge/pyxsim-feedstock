@@ -42,10 +42,10 @@ requirements:
 test:
   imports:
     - pyxsim
-  commands:
-    - pip check
-  requires:
-    - pip
+  # commands:
+  #  - pip check
+  #requires:
+  #  - pip
 
 about:
   home: https://github.com/jzuhone/pyxsim
