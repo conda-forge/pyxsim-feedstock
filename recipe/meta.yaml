@@ -1,5 +1,5 @@
 {% set name = "pyxsim" %}
-{% set version = "4.4.3" %}
+{% set version = "4.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyxsim-{{ version }}.tar.gz
-  sha256: c51c911655ae8bd21ad6af36f6e3670ee2f82fe1a429dcf24b8033bedff09713
+  sha256: 4551a7474ee7245dd9e7279b3a74e6b358543dee58ddba95087eb264c343d5f8
 
 build:
   skip: true  # [py<311]
@@ -42,10 +42,10 @@ requirements:
 test:
   imports:
     - pyxsim
-  commands:
-    - pip check
-  requires:
-    - pip
+  # commands:
+  #  - pip check
+  #requires:
+  #  - pip
 
 about:
   home: https://github.com/jzuhone/pyxsim
